@@ -8,16 +8,16 @@ import { Suspense } from 'react';
 const App = () => {
   const { theme } = useTheme();
 
-  return (
+    return (
     <div className={classNames('app', {}, [theme])}>
-      <Suspense fallback="">
-        <Navbar />
-        <div className="content-page">
-          <Sidebar />
-          <AppRouter />
+          <Suspense fallback="">
+              <Navbar />
+              <div className="content-page">
+                  <Sidebar />
+                  <AppRouter />
+                </div>
+            </Suspense>
         </div>
-      </Suspense>
-    </div>
   );
 };
 

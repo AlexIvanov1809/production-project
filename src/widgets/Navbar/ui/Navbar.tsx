@@ -4,24 +4,24 @@ import { AppLink } from 'shared/ui';
 import { AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 
 interface NavbarProps {
-  className?: string;
+  className?: string
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
   return (
-    <div className={classNames(cls.Navbar, {}, [className])}>
-      <div className={cls.links}>
-        <AppLink
-          theme={AppLinkTheme.SECONDARY}
-          className={cls.mainLink}
-          to={'/'}
-        >
-          Главная
-        </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to={'/about'}>
-          О сайте
-        </AppLink>
-      </div>
-    </div>
+      <div className={classNames(cls.Navbar, {}, [className])}>
+          <div className={cls.links}>
+              <AppLink
+                    theme={AppLinkTheme.SECONDARY}
+                    className={cls.mainLink}
+                    to={'/'}
+                >
+                  Главная
+                </AppLink>
+              <AppLink theme={AppLinkTheme.SECONDARY} to={'/about'}>
+                  О сайте
+                </AppLink>
+            </div>
+        </div>
   );
 };
