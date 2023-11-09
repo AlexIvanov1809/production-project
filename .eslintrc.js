@@ -7,6 +7,7 @@ module.exports = {
     'eslint:recommended',
     'standard-with-typescript',
     'plugin:react/recommended',
+    'plugin:i18next/recommended',
   ],
   overrides: [
     {
@@ -26,7 +27,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'i18n'],
   rules: {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
@@ -50,6 +51,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     quotes: ['error', 'single'],
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
     semi: 'off',
     '@typescript-eslint/semi': 'off',
     'no-unexpected-multiline': 'error',
@@ -62,15 +64,15 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'off',
     'react/jsx-props-no-spreading': 'off',
   },
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-        project: ['./tsconfig.json'],
-      },
-    },
-  },
+  // settings: {
+  //   'import/parsers': {
+  //     '@typescript-eslint/parser': ['.ts', '.tsx'],
+  //   },
+  //   'import/resolver': {
+  //     typescript: {
+  //       alwaysTryTypes: true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+  //       project: ['./tsconfig.json'],
+  //     },
+  //   },
+  // },
 };
