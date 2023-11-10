@@ -1,3 +1,5 @@
+export { Loader } from './Loader/Loader';
+export { PageLoader } from './PageLoader/PageLoader';
 export { ThemeButton } from './Button/Button';
 export { AppLinkTheme } from './AppLink/AppLink';
 export { LangSwitcher } from './LangSwitcher/LangSwitcher';
