@@ -64,6 +64,7 @@ module.exports = {
     '@typescript-eslint/comma-dangle': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
     'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
   },
   // settings: {
   //   'import/parsers': {
