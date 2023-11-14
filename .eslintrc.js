@@ -4,12 +4,7 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: [
-    'eslint:recommended',
-    'standard-with-typescript',
-    'plugin:react/recommended',
-    'plugin:i18next/recommended',
-  ],
+  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:react/recommended', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
   overrides: [
     {
       env: {
