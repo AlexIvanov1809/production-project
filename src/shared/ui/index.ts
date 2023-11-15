@@ -1,6 +1,6 @@
 export { Loader } from './Loader/Loader';
 export { PageLoader } from './PageLoader/PageLoader';
-export { ThemeButton } from './Button/Button';
+export { ButtonTheme } from './Button/Button';
 export { AppLinkTheme } from './AppLink/AppLink';
 export { LangSwitcher } from './LangSwitcher/LangSwitcher';
 export { Button } from './Button/Button';
