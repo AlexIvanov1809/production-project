@@ -4,7 +4,13 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:react/recommended', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'standard-with-typescript',
+    'plugin:react/recommended',
+    'plugin:i18next/recommended',
+    'plugin:storybook/recommended',
+  ],
   overrides: [
     {
       env: {
@@ -23,8 +29,10 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react', '@typescript-eslint', 'i18n'],
+  plugins: ['react', '@typescript-eslint', 'i18n', 'react-hooks'],
   rules: {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-indent': 'off',

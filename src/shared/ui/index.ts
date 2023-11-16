@@ -1,3 +1,4 @@
+export { Modal } from './Modal/Modal';
 export { Loader } from './Loader/Loader';
 export { PageLoader } from './PageLoader/PageLoader';
 export { ButtonTheme } from './Button/Button';

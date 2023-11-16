@@ -5,28 +5,29 @@ import {
   ThemeContext,
 } from '../lib/ThemeContext';
 
-interface Props {
-  children?: React.ReactNode
-}
-
 const defaultTheme =
   (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
 
-const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
+interface ThemeProviderProps {
+  children?: React.ReactNode;
+  initialTheme?: Theme;
+}
 
-    const defaultProps = useMemo(
+const ThemeProvider = ({ children, initialTheme }: ThemeProviderProps) => {
+  const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme);
+
+  const defaultProps = useMemo(
     () => ({
       theme,
       setTheme,
     }),
-    [theme]
-    );
+    [theme],
+  );
 
   return (
-      <ThemeContext.Provider value={defaultProps}>
-          {children}
-        </ThemeContext.Provider>
+    <ThemeContext.Provider value={defaultProps}>
+      {children}
+    </ThemeContext.Provider>
   );
 };
 
