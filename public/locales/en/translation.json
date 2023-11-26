@@ -4,5 +4,7 @@
   "Страница не найдена": "Page not found",
   "throw Error": "throw error",
   "короткий язык": "En",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }
