@@ -13,7 +13,7 @@ import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
-import { getLoginError } from '../../model/getLoginError/getLoginError';
+import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import {
   DynamicModuleLoader,
   type ReducerList,
