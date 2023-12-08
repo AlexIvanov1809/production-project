@@ -24,13 +24,14 @@ export function buildPlugins({
     }),
   ];
 
+  plugins.push(
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false,
+    }),
+  );
+
   if (isDev) {
     plugins.push(new ReactRefreshPlugin());
-    plugins.push(
-      new BundleAnalyzerPlugin({
-        openAnalyzer: false,
-      }),
-    );
   }
 
   return plugins;
