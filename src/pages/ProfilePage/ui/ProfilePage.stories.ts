@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Navbar from './Navbar';
+import ProfilePage from './ProfilePage';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
 const meta = {
-  title: 'widgets/Navbar',
-  component: Navbar,
+  title: 'pages/ProfilePage',
+  component: ProfilePage,
   parameters: {
     layout: 'centered',
   },
@@ -14,7 +14,7 @@ const meta = {
   tags: ['autodocs'],
 
   argTypes: {},
-} satisfies Meta<typeof Navbar>;
+} satisfies Meta<typeof ProfilePage>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

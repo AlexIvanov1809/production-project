@@ -1,5 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Text.module.scss';
+import { memo } from 'react';
 
 export enum TextTheme {
   PRIMARY = 'primary',
@@ -13,7 +14,7 @@ interface TextProps {
   theme?: TextTheme;
 }
 
-export const Text = ({
+const Text = ({
   className,
   title,
   text,
@@ -26,3 +27,5 @@ export const Text = ({
     </div>
   );
 };
+
+export default memo(Text);

@@ -4,7 +4,7 @@ import type { StateSchemaKey } from 'app/providers/StoreProvider/config/StateSch
 import { type ReactElement, useEffect } from 'react';
 import { useStore } from 'react-redux';
 
-export type ReducerList = {
+export type ReducersList = {
   [name in StateSchemaKey]?: Reducer;
 };
 
@@ -12,7 +12,7 @@ type reducersListEntries = [StateSchemaKey, Reducer];
 
 interface DynamicModuleLoaderProps {
   children: ReactElement;
-  reducers: ReducerList;
+  reducers: ReducersList;
   removeAfterUnmount?: boolean;
 }
 
