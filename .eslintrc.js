@@ -68,6 +68,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'off',
     'react/jsx-props-no-spreading': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
+    'no-undef': 'off',
   },
   // settings: {
   //   'import/parsers': {

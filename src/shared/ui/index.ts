@@ -1,3 +1,4 @@
+import Text from 'shared/ui/Text/Text';
 import Input from './Input/Input';
 import ThemeSwitcher from './ThemeSwitcher/ui/ThemeSwitcher';
 import LangSwitcher from './LangSwitcher/LangSwitcher';
@@ -10,4 +11,4 @@ export { PageLoader } from './PageLoader/PageLoader';
 export { ButtonTheme } from './Button/Button';
 export { AppLinkTheme } from './AppLink/AppLink';
 
-export { Input, ThemeSwitcher, LangSwitcher, Button, AppLink };
+export { Input, ThemeSwitcher, LangSwitcher, Button, AppLink, Text };
